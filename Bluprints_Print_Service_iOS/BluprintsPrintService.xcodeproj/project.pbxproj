@@ -1,0 +1,29 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000064 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPrinter.swift; sourceTree = "<group>"; };
+0000000000000000000000C8 = { isa = PBXBuildFile; fileRef = 000000000000000000000064; };
+000000000000000000000065 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluprintsPrintServiceApp.swift; sourceTree = "<group>"; };
+0000000000000000000000C9 = { isa = PBXBuildFile; fileRef = 000000000000000000000065; };
+000000000000000000000066 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+0000000000000000000000CA = { isa = PBXBuildFile; fileRef = 000000000000000000000066; };
+000000000000000000000067 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobInbox.swift; sourceTree = "<group>"; };
+0000000000000000000000CB = { isa = PBXBuildFile; fileRef = 000000000000000000000067; };
+000000000000000000000068 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintJob.swift; sourceTree = "<group>"; };
+0000000000000000000000CC = { isa = PBXBuildFile; fileRef = 000000000000000000000068; };
+00000000000000000000005A = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluprintsPrintService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+00000000000000000000005B = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+000000000000000000000001 = { isa = PBXProject; attributes = { LastUpgradeCheck = 1600; TargetAttributes = { 000000000000000000000002 = { CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 00000000000000000000000A; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = 000000000000000000000003; productRefGroup = 000000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000002,); };
+000000000000000000000002 = { isa = PBXNativeTarget; buildConfigurationList = 00000000000000000000000B; buildPhases = (000000000000000000000006,000000000000000000000007,000000000000000000000008,); buildRules = (); dependencies = (); name = BluprintsPrintService; productName = BluprintsPrintService; productReference = 00000000000000000000005A; productType = "com.apple.product-type.application"; };
+000000000000000000000003 = { isa = PBXGroup; children = (000000000000000000000004,000000000000000000000005,); sourceTree = "<group>"; };
+000000000000000000000004 = { isa = PBXGroup; children = (000000000000000000000064,000000000000000000000065,000000000000000000000066,000000000000000000000067,000000000000000000000068,00000000000000000000005B,); path = BluprintsPrintService; sourceTree = "<group>"; };
+000000000000000000000005 = { isa = PBXGroup; children = (00000000000000000000005A,); name = Products; sourceTree = "<group>"; };
+000000000000000000000006 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (0000000000000000000000C8,0000000000000000000000C9,0000000000000000000000CA,0000000000000000000000CB,0000000000000000000000CC,); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000007 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000008 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+00000000000000000000000A = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000000C,00000000000000000000000D,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+00000000000000000000000B = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000000E,00000000000000000000000F,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+00000000000000000000000C = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; }; name = Debug; };
+00000000000000000000000D = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; }; name = Release; };
+00000000000000000000000E = { isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = BluprintsPrintService/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.bluprints.printservice; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks",); }; name = Debug; };
+00000000000000000000000F = { isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = BluprintsPrintService/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.bluprints.printservice; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks",); }; name = Release; };
+}; rootObject = 000000000000000000000001; }
